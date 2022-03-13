@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: url(../img/banner.jpg) no-repeat;
+    background-size: 1476px 460px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.main-header {
+    height: 46px;
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-header {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.list-nav {
+    padding: 0;
+}
+
+.list-nav li {
+    display: inline-block;
+    padding: 0 15px;
+    color: rgb(126, 122, 122);
+    list-style: none;
+}
+
+.list-nav a {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    color: pink;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.list-nav a:hover {
+    color: white;
+    background-color: black;
+}
+
+.social {
+    margin-right: 12px;
+}
+
+.list-social {
+    padding: 0;
+}
+
+.list-social li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 15px;
+}
+
+.list-social a {
+    color: rgb(126, 122, 122);
+}
+
+.list-social a:hover {
+    color: rgb(192, 189, 189);
+}
+
+.slogan {
+    color: pink;
+    padding-top: 90px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@font-face {
+    font-family:font_strong;
+    src:url('../fonts/SortsMillGoudy-Italic.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+.slogan .desc{
+       font-family: font_strong;
+       font-weight: 400;
+       font-size: 20px;
+}
+
+.content {
+    margin-bottom: 100px;
+}
+
+.about-me {
+    display: flex;
+    margin-inline-start: 120px;
+}
+
+.connect-with-me {
+    width: 45%;
+    background-color: rgb(230,190,190);
+}
+
+.sub-text {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(75,102,54);
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.info {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 40px;
+}
+
+.info-name {
+    margin-top: 50px;
+}
+
+.info-name .name, 
+.info-name .phone {
+    background-color: rgb(230,190,190);
+    border-style: none none solid none;
+    height: 50px;
+
+}
+
+.info-email {
+    margin-top: 30px;
+}
+
+.info-email .email {
+    background-color: rgb(230,190,190);
+    border-style: none none solid none;
+    width: 84%;
+    height: 50px;
+}
+
+.info-message {
+    margin-top: 30px;
+}
+
+.info-message .message {
+    background-color: rgb(230,190,190);
+    border-style: none none solid none;
+    width: 84%;
+    height: 100px;
+}
+
+.info-submit {
+    text-align: center;
+    margin-top: 14px;
+}
+
+.info-submit .submit {
+    background-color: rgb(230,190,190);
+    border: 0 solid;
+    width: 73%;
+    height: 40px;
+    color: rgb(75,102,54);
+}
+
+.info-submit .submit:hover {
+    background-color: rgb(75,102,54);
+    color: rgb(230,190,190);
+}
+
+.footer {
+    margin: 100px 0 20px 0;
+}
+
+.sign-up p {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px; 
+}
+
+.ipnut-email {
+    margin-left: 470px;
+}
+
+.send-email {
+    width: 30%;
+    height: 40px;
+    border-style: none none solid none;
+    border-color: rgb(75,102,53);
+}
+
+.send {
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(89,115,68); 
+    color: rgb(230,190,190);  
+    margin-left: 10px;
+}
+
+.send:hover {
+    background-color: rgb(230,190,190);
+    color: rgb(89,115,68);
+}
+
+.image-about-me {
+    width: 45%;
+}
+
+.footer {
+    margin: 100px 0 20px 0;
+}
+
+.sign-up p {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px; 
+}
+
+.ipnut-email {
+    margin-left: 470px;
+}
+
+.send-email {
+    width: 30%;
+    height: 40px;
+    border-style: none none solid none;
+    border-color: rgb(75,102,53);
+}
+
+.send {
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(89,115,68); 
+    color: rgb(230,190,190);  
+    margin-left: 10px;
+}
+
+.send:hover {
+    background-color: rgb(230,190,190);
+    color: rgb(89,115,68);
+}
+
+.list-footer-social {
+    display: inline-flex;
+    margin-left: 500px;
+}
+
+.list-footer-social a {
+    color: rgb(126, 122, 122);
+}
+
+.list-footer-social a:hover {
+    color: rgb(192, 189, 189);
+}
+
+.list-footer-social  li {
+    list-style: none;
+    padding: 0 15px;
+    margin-top: 60px;
+}
+
+.coppyright {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(126, 122, 122);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}

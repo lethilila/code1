@@ -1,0 +1,501 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    background-image: url(../img/banner.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+}
+
+.nav-header {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.list-nav {
+    padding: 0;
+}
+
+.list-nav li {
+    display: inline-block;
+    padding: 0 15px;
+    color: rgb(126, 122, 122);
+    list-style: none;
+}
+
+.list-nav a {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    color: pink;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.list-nav a:hover {
+    color: white;
+    background-color: black;
+}
+
+.social {
+    margin-right: 12px;
+}
+
+.list-social {
+    padding: 0;
+}
+
+.list-social li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 15px;
+}
+
+.list-social a {
+    color: rgb(126, 122, 122);
+}
+
+.list-social a:hover {
+    color: rgb(192, 189, 189);
+}
+
+.slogan {
+    color: pink;
+    padding-top: 90px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@font-face {
+    font-family:font_strong;
+    src:url('../fonts/SortsMillGoudy-Italic.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+.slogan .desc{
+       font-family: font_strong;
+       font-weight: 400;
+       font-size: 20px;
+}
+
+.sub-header {
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    background-color: white;
+    width: 70%;
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-subnav {
+    padding-left: 14px;
+}
+
+.subnav-header .list-subnav li {
+    display: inline-block;
+    padding: 0 6px;
+    color: rgb(75,102,53);
+    padding-right: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.subnav-header .list-subnav li:hover {
+    color: pink;
+}
+
+.sub-social {
+    padding-right: 6px;
+    display: flex;
+}
+
+.search-bar {
+    color: rgb(146, 141, 141); 
+}
+
+.search-bar-input {
+    height: 40px;
+    border-style: none none solid none;
+}
+
+.search-bar-btn {
+    background-color: transparent;
+    border: none
+}
+
+.search-bar-icon:hover {
+    color: rgb(141, 138, 138);
+}
+
+.sublist-social li {
+    list-style: none;
+    cursor: pointer;
+    color: rgb(75,102,53);
+}
+
+.content { 
+    padding: 0;
+    margin-left: 120px;
+    margin-right: 0px;
+    border-right-width: 100px;
+    width: 850px;
+}
+
+.row {
+    border: 1px solid pink;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 400px;
+}
+
+.content.row.col{
+    padding-left: 0;
+}
+
+.post{
+    display: flex;
+    width: 100%;
+    height: 100%;
+} 
+
+.image-post{
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.main-avatar {
+    display: flex;
+    position: relative;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.username {
+    margin-top: 50px;
+    margin-left: 10px;
+    color: rgb(75,102,53);
+    font-size: 14px;
+}
+
+.content-post {
+    display: inline-block;
+}
+
+.king {
+    margin-top: 52px;
+    margin-left: 10px;
+    color: rgb(75,102,53);
+}
+
+.date {
+    color: rgb(126, 122, 122);
+    font-size: 10px;
+    margin-left: 8px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.post-time {
+    margin-left: 10px; 
+    color: rgb(146, 141, 141); 
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.more {
+    margin-top: 45px;
+    position: absolute;
+    right: 0;
+}
+
+.more-icon {
+    color: rgb(75,102,53);
+}
+
+.more-icon:hover {
+   color: pink;
+   cursor: pointer;
+} 
+
+.more:hover .share-more {
+    display: block;
+}
+
+.share-more {
+    width: 200px;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px #e0e0e0;
+    display: none;
+}
+
+.share-more::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    width: 150px;
+    height: 25px;
+}
+
+.share-more-more {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    height: 46px;
+    line-height: 46px;
+}
+
+.share {
+    margin-top: 14px;
+    margin-right: 10px;
+    color: rgb(75,102,53);
+}
+
+.share-more-more li{
+    list-style: none;
+}
+
+.link-share-more {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(75,102,53);
+    border: none;
+    background-color: transparent;
+}
+
+.link-share-more:hover {
+    color: rgb(230,190,190);  
+    cursor: pointer;
+}
+
+.link-desc {
+    text-decoration: none;
+    color: rgb(75,102,53);
+}
+
+.link-desc:hover {
+    color: pink;
+}
+
+.feedback {
+    display: flex;
+    justify-content: space-between;
+}
+
+.viewer a {
+    text-decoration: none;
+    color: rgb(126, 122, 122);
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.viewer a:hover {
+    color: pink;
+}
+
+.feel i {
+    cursor: pointer;
+    color: red;
+}
+
+.footer {
+    margin: 100px 0 20px 0;
+}
+
+.sign-up p {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px; 
+}
+
+.ipnut-email {
+    margin-left: 470px;
+}
+
+.send-email {
+    width: 30%;
+    height: 40px;
+    border-style: none none solid none;
+    border-color: rgb(75,102,53);
+}
+
+.send {
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(89,115,68); 
+    color: rgb(230,190,190);  
+    margin-left: 10px;
+}
+
+.send:hover {
+    background-color: rgb(230,190,190);
+    color: rgb(75,102,53);
+}
+
+.list-footer-social {
+    display: inline-flex;
+    margin-left: 500px;
+}
+
+.list-footer-social a {
+    color: rgb(126, 122, 122);
+}
+
+.list-footer-social a:hover {
+    color: rgb(192, 189, 189);
+}
+
+.list-footer-social  li {
+    list-style: none;
+    padding: 0 15px;
+    margin-top: 60px;
+}
+
+.coppyright {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(126, 122, 122);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.modal_social {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal_social.open {
+    display: flex;
+}
+
+.modal_social_container {
+    background-color: #fff;
+    width: 460px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-icon-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.modal-icon-close:hover {
+    opacity: 1;
+}
+
+.modal_social_header {
+    color: rgb(75,102,53);
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.modal_social_body {
+    margin: 0 50px;
+    padding: 0 27px;
+}
+
+.modal_social_body_list-social {
+    padding: 0 40px;
+}
+
+.modal_social_body_list-social li{
+    list-style: none;
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.modal_social_body_list-social i {
+    color: #fff;
+    text-align: center;
+}
+
+.modal_social_icon--face {
+    background-color: #4464a3;
+    margin-right: 10px;
+}
+
+.modal_social_icon--twit {
+    background-color: #55acee;
+    margin-right: 10px;
+}
+
+.modal_social_icon--in{
+    background-color: #0077b5;
+    margin-right: 10px;
+}
+
+.modal_social_icon--link{
+    background-color: #333;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
